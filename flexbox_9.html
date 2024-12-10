@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 9</title>
+</head>
+
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 4px;
+        height: calc(100vh - 8px);
+    }
+
+    nav,
+    main,
+    aside,
+    footer {
+        border: 1px solid black;
+        padding: 4px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .l {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .navbox {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .r {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .navboxes {
+        background-color: red;
+        height: 30px;
+        width: 50px;
+    }
+
+    .allcontainer {
+        display: flex;
+        flex-grow: 1;
+        gap: 4px;
+
+
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+    }
+
+    .asideboxes {
+        border: 1px solid black;
+        height: 30px;
+        width: 20vw;
+    }
+
+    .twokulukoy {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 4px;
+    }
+
+    main {
+        display: flex;
+        flex-grow: 1;
+
+    }
+
+    .mainboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .mupper {
+
+        border: 1px solid black;
+        height: 20vh;
+        width: 60vw;
+    }
+
+    .mlower {
+        border: 1px solid black;
+        height: 20vh;
+        width: 60vw;
+    }
+
+    .footermain {
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+        align-items: center;
+        
+    }
+   
+
+    .rightfooter {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .footercube {
+        background-color: red;
+        height: 40px;
+        width: 40px;
+    }
+
+    .leftfooter{
+        display: flex;
+        gap: 4px;
+        
+    }
+    .boxes{
+        background-color: red;
+        height: 20px;
+        width: 20px;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <div class="l">
+            <div class="navbox"></div>
+            <div>Flexbox</div>
+        </div>
+
+        <div class="r">
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+            <div class="navboxes"></div>
+        </div>
+    </nav>
+
+    <div class="allcontainer">
+
+        <aside>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+            <div class="asideboxes"></div>
+        </aside>
+
+        <div class="twokulukoy">
+
+            <main>
+                <div class="mainboxes">
+                    <div>
+                        <div class="mupper"></div>
+                    </div>
+                    <div>
+                        <div class="mlower"></div>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+                <div class="footermain">
+                    <div class="rightfooter">
+                        <div class="footercube"></div>
+
+                        <div class="down">
+                            <div>FLEXBOX</div>
+                            <div>COPYRIGHT FLEXBOX</div>
+                        </div>
+                    </div>
+
+                    <div class="leftfooter">
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                        <div class="boxes"></div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
